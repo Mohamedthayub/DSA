@@ -1,7 +1,15 @@
-public class Main{
+public class main{
     public static void main(String[] args){
-        // System.out.print("H")
-        int num = 12;
-        System.out.println(num);
+        System.out.println("Hello World!");
+        System.out.println("I am learning Java."); 
+        System.out.println("It is awesome!");
     }
 }
+
+
+// this is we write single line comment;
+
+/*
+it is multi line comment
+*/
+

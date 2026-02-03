@@ -15,15 +15,16 @@ boolean - stores values with two states: true or false
 
 public class Main{
     public static void main(String[] args){
-        String name = "Mohamed thayub";
-        int otp = 5453434;
-        float decimal =  12.99;
-        char  letter = 'A';
-        boolean isLogggedin = true;
-System.out.println(name);
-System.out.println(otp);
-System.out.println(decimal);
-System.out.println(letter);
-System.out.println(isLogggedin);
+        int number = 12;
+        if(number > 12){
+            System.out.println("number is greater than 12");
+        }
+        else if (number == 12){
+            System.out.println("Number is  equal to 12");
+        }
+        else{
+            System.out.println("number is less than 12");
+        }
     }
 }
+

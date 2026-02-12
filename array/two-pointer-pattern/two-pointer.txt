@@ -1,0 +1,40 @@
+ 🟢 What is the Two Pointer Technique?
+
+Two Pointer means:
+Using two indices (pointers) to traverse a data structure instead of one.
+Usually used on:
+
+Arrays
+Strings
+LinkedLists
+
+int left = 0;
+int right = n - 1;
+
+1️⃣ Why do we use Two Pointer?
+
+❌ Problem with single loop
+Often leads to nested loops
+Time complexity becomes O(n²)
+
+✅ Two Pointer advantage
+Solves same problems in O(n)
+Reduces unnecessary comparisons
+Clean & readable logic
+👉 Main goal:
+🚀 Optimize time complexity
+
+
+arr = [1,2,3,4,5];
+left = 0;
+right = arr.length - 1;
+
+while(left < right){
+    temp = arr[right];
+    arr[right] = arr[left];
+    arr[left] = temp;
+    left++;
+    right--;
+}
+
+ 

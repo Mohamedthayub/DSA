@@ -1,14 +1,32 @@
-function findMinMax(arr){
-    let min = arr[0];
-    let max = arr[0];
-    for(let i = 0;  i<arr.length; i++){
-        if(arr[i] > max){
-            max = arr[i];
+// function isLength(arr){
+//     if(arr.length <= 1){
+//         return false;
+//     }
+//     else{
+//         return true
+//     }
+// }
+// console.log(isLength([1,2]));
+
+function pairSum(arr,target){
+    arr.sort();
+    if(arr.length <= 1){
+        return false;
+    }
+    let left = 0;
+    let right = arr.length - 1;
+    while(left < right){
+        let sum = arr[left] + arr[right];
+        if(sum == target){
+            return true;
         }
-        if(arr[i] < min){
-            min = arr[i];
+        else if (sum > target){
+            right --;
+        }
+        else{
+            left++;
         }
     }
-    return [min,max];
+    return false;
 }
-console.log(findMinMax([5,1,2,3,6]));
+console.log(pairSum([0,-1,2,-3,1],2));

@@ -33,7 +33,7 @@ public class Main{
 
         names.clear(); // clear the hashmap value 
 
-        names.put(10, names.getOrDefault(10,0) + 1); // getOrDefault function use to set the default value in hashmap
+        // names.put(10, names.getOrDefault(10,0) + 1); // getOrDefault function use to set the default value in hashmap
         
         System.out.println(names);
         
@@ -43,6 +43,14 @@ public class Main{
         summa.put(1,11);
         summa.put(2,22);
         System.out.println(summa);
+
+        for(int num : summa.keySet()){
+            System.out.println(num); // we iterate the keys using loop  
+        }
+        
+        for(int num : summa.values()){
+            System.out.println(num);
+        }
         
     }
 }

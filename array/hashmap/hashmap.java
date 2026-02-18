@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map; // to  iterate key and value using for loop i should use the this package that's when it will work;
 public class Main{
     public static void main(String[] args){
         System.out.println("I am Learning HashMap...");
@@ -31,7 +32,7 @@ public class Main{
         }
 
 
-        names.clear(); // clear the hashmap value 
+        // names.clear(); // clear the hashmap value 
 
         // names.put(10, names.getOrDefault(10,0) + 1); // getOrDefault function use to set the default value in hashmap
         
@@ -52,6 +53,10 @@ public class Main{
             System.out.println(num);
         }
         
+        // printing the key and value in the map;
+        for(Map.Entry<Integer,Integer> number : summa.entrySet()){
+            System.out.println(number.getKey() + " -> " + number.getValue());
+        } // iterate key and value using for loop; 
     }
 }
 

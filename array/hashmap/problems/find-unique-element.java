@@ -2,8 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main{
-    public static void main(String[] args){
-        int[] arr = {4, 5, 4, 5, 6};
+    static int find_unique(int[] arr){
         HashMap<Integer,Integer> unique  = new HashMap<>();
         for(int i = 0; i<arr.length; i++){
             unique.put(arr[i], unique.getOrDefault(arr[i],0) + 1);
@@ -11,9 +10,14 @@ public class Main{
         
        for(Map.Entry<Integer,Integer> number : unique.entrySet()){
         if(number.getValue() == 1){
-            System.out.println(number.getKey());
+            return number.getKey();
         }
        }
+       return -1;
+    }
+    public static void main(String[] args){     
+        int[] arr = {4, 5, 4, 5, 6};
+        System.out.println(find_unique(arr));
     }
 }
 

@@ -13,10 +13,8 @@ function   subArray(arr,k){
         }
     }
     return maxSum;
-
 }
-
-console.log(subArray([1, 4, 2, 10, 23, 3, 1, 0, 20],4));
+console.log(subArray([4,4,4],0));
 console.log(subArray([2,3],1));
 console.log(subArray([100,200,300,400],2));
 

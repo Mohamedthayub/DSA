@@ -1,0 +1,61 @@
+🪜 Best Progression (Important)
+🔹 Phase 1: Fixed Window (5–6 problems)
+
+Window size is fixed (k)
+
+Examples:
+
+Maximum sum of subarray of size k
+
+Average of subarrays of size k
+
+Count occurrences of a pattern of size k
+
+Maximum number of vowels in substring of length k
+
+First negative number in every window of size k
+
+👉 Goal:
+Understand add right → remove left
+
+🔹 Phase 2: Variable Window (8–10 problems)
+
+Window size changes based on condition
+
+Examples:
+
+Longest substring without repeating characters
+
+Longest substring with at most K distinct characters
+
+Smallest subarray with sum ≥ target
+
+Longest subarray with sum ≤ k
+
+Fruits into baskets (classic)
+
+Minimum window substring (advanced)
+
+Longest substring after character replacement
+
+👉 Goal:
+Understand expand → check → shrink
+
+🔹 Phase 3: HashMap + Sliding Window (5–6 problems)
+
+Combining frequency maps
+
+Examples:
+
+Anagram occurrences in a string
+
+Permutation in string
+
+Longest substring with same letters after replacement
+
+Subarrays with K different integers
+
+Count subarrays with sum equals k
+
+👉 Goal:
+Master frequency tracking + window control

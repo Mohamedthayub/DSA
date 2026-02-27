@@ -4,22 +4,30 @@ public class Main{
         if(arr.length  == 0  || k > arr.length || k <= 0){
             return 0;
         }
-        int maxSum = Integer.MIN_VALUE;
-        for(int i = 0; i<=arr.length - k ; i++){
-            int sum = 0;
-            for(int j = i; j<k + i; j++){
-                sum  = sum + arr[j];
-            }
-            if(sum > maxSum){
-                maxSum = sum;
-            }
+        int maxSum = 0;
+        for(int i = 0; i<k ; i++){
+            maxSum = maxSum + arr[i];
+        }
+        int windowSum  = maxSum;
+        for(int  j = k ; j<arr.length; j++){
+            windowSum = windowSum + arr[j] ;
+            windowSum = windowSum - arr[j-k];
+            
+            maxSum = Math.max(maxSum, windowSum);
         }
         return maxSum;
     }
     public static void main(String[] args){
         int [] arr = {100,200,300,400};
+        int [] arr2  = {1, 4, 2, 10, 23, 3, 1, 0, 20};
+        int [] arr3 = {2, 3};
         int k   = 2;
+        int k2  = 4;
+        int k3 = 1;
         System.out.println(subArray(arr,k));
+        System.out.println(subArray(arr2,k2));
+        System.out.println(subArray(arr3,k3));
+
     }
 }
 

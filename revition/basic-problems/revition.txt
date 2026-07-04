@@ -1,0 +1,20 @@
+Print "Hello World" 5 times using a loop.
+Print numbers from 1 to 100.
+Print even numbers from 1 to 100.
+Print odd numbers from 1 to 100.
+Find the sum of numbers from 1 to N.
+Find the factorial of a number.
+Reverse a number.
+Count the digits in a number.
+Find the sum of digits.
+Check whether a number is a palindrome.
+Check whether a number is an Armstrong number.
+Check whether a number is prime.
+Print all prime numbers from 1 to N.
+Find the GCD (HCF) of two numbers.
+Find the LCM of two numbers.
+Generate the Fibonacci series.
+Check whether a number is a perfect number.
+Find the largest digit in a number.
+Find the smallest digit in a number.
+Count how many times a particular digit occurs.

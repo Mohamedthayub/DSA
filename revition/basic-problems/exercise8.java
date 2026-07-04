@@ -9,4 +9,4 @@ public class Main{
         System.out.println(count);
     }
 }
-// Count the digits in a number.
+// Count the digi ts in a number.

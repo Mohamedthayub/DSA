@@ -15,7 +15,7 @@ console.log(checkPalidrome("hello"));
 2. Palindrome
 Problem
 
-Given a string, determine whether it is a palindrome.
+Given a string, cldetermine whether it is a palindrome.
 
 A palindrome reads the same from left to right and right to left.
 

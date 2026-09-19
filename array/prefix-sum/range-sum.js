@@ -1,19 +1,16 @@
-
-let arr = [2,4,1,5,3];
-let left = 1;
-let right = 3;
-// let prefix = [];
-for(let i = 1; i<arr.length; i++){
-    arr[i] = arr[i-1] + arr[i];
+function  rangeSum(arr,left,right){
+    for(let i =  1; i<arr.length; i++){
+        arr[i] = arr[i-1] + arr[i];
+    }
+    if(left == 0){
+        return arr[right];
+    }
+    else{
+        let result = arr[right] - arr[left - 1];
+        return result;
+    }
 }
-console.log(arr);
-if(left == 0){
-    console.log(arr[right]);
-}
-else{
-    let value = arr[right] - arr[left - 1];
-    console.log(value);
-}
+console.log(rangeSum([2,4,1,5,3],1,3));
 
 /*
 28. Range Sum

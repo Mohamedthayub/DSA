@@ -1,6 +1,6 @@
 function removeDuplicates(arr){
     let duplicates = [];
-    for(let i = 0; i<arr.length-1; i++){
+    for(let i = 0; i<arr.length; i++){
         if(arr[i] != arr[i+1]){
             duplicates.push(arr[i]);
         }
@@ -10,6 +10,7 @@ function removeDuplicates(arr){
 }
 console.log(removeDuplicates([10, 10, 20, 30, 30, 30, 40]))
 /*
+time complexity o(n) && space complexity o(n)
 13. Remove Duplicates
 Problem Statement
 

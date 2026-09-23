@@ -1,19 +1,25 @@
 function findSecondLargest(arr){
     let largest = arr[0];
+    let Slargest = -1;
+    if(arr.length == 0){
+        return;
+    }
     for(let i = 0; i<arr.length; i++){
         if(arr[i] > largest){
+            Slargest = largest;
             largest = arr[i];
         }
-    }
-    let Slargest = -1;
-    for(let j = 0; j<arr.length; j++){
-        if(arr[j] != largest && arr[j] > Slargest){
-            Slargest = arr[j];
+        else if(Slargest < arr[i] && Slargest != largest){
+            Slargest = arr[i];
         }
     }
     return Slargest;
 }
-console.log(findSecondLargest([1,2,3,4,5]));
+console.log(findSecondLargest([1,2,3,4]));
+console.log(findSecondLargest([5,5,5,6,7]));
+console.log(findSecondLargest([5,5,5,5,5]));
+
+
 /*
 
 9. Find the Second Largest Element

@@ -12,7 +12,7 @@ function find_sum(arr,target){
 console.log(find_sum([2,7,11,15],0));
 /*
 21. Two Sum
-Problem Statement
+Problem Statement 
 
 Given an array of integers and a target value, find two elements whose sum equals the target.
 

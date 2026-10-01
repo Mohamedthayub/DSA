@@ -33,7 +33,7 @@ Odd numbers:
 
 Output:
 
-Even = 3
+Even = 
 Odd = 3
 Think about
 

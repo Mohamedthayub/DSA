@@ -1,12 +1,10 @@
-let n = 4;
-let arr = [];
-let start = 3;
-for(let i = 0; i<n; i++){
-    arr[i] = start +  2 * i;
-}
+let s = "aAbBcC"
+let  count = 0;
 
-let result = arr[0];
-for(let j = 0; j<arr.length; j++){
-    result = result  ^ arr[j];
+for(let i = 0; i<s.length - 1; i++){
+    let nextChr = s[i+1].toLocaleLowerCase();
+    if(s[i].toLocaleLowerCase() != nextChr){
+        count++;
+    }
 }
-console.log(result);
+console.log(count);
